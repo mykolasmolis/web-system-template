@@ -15,10 +15,9 @@
     - [ ] Each attribute should have restrictions defined: list of constants, or number range, or string length, or string format, or object schema, or array schema or other. For example, you can use `joi` language to define restrictions: https://github.com/hapijs/joi/blob/v13.1.2/API.md
 
 ## API definition
-- [ ] Define **ONE** of the flowing
-    - [ ] specific service (konkrečios paslaugos) API methods that WEB system is going to use
-    - [ ] additional API methods that WEB system is going to expose
-- [ ] API should have at least 2 methods
+- [ ] Define specific service (konkrečios paslaugos) API methods that WEB system is going to use
+- [ ] Optionally define additional API methods that WEB system is going to expose
+- [ ] API should have at least 4 methods
     - [ ] A method to return entity by ID. Should not have request body
     - [ ] A method to return multiple entities (Array) by ID. This method should support at least one header value to:
         - [ ] Return only entities that match pattern in one of its attributes
