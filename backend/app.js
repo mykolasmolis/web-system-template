@@ -1,14 +1,13 @@
 const path = require('path');
 const express = require('express');
+const bodyParser = require('body-parser');
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
 const app = express();
 
+app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '..', 'frontend', 'dist')));
-app.get('*', (_req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'frontend', 'dist', 'index.html'));
-});
 
 app.listen(port, (error) => {
   if (error) {
