@@ -7,7 +7,7 @@
     "lint": "eslint webpack.config.js backend frontend/src/**/*.js*",
     "build": "webpack --mode production",
     "watch-webpack": "webpack --watch --mode development",
-    "watch-nodemon": "nodemon --watch backend backend",
+    "watch-nodemon": "nodemon --watch backend --experimental-modules backend/index.mjs",
     "dev": "npm-run-all --parallel watch-webpack watch-nodemon",
     "start": "node backend"
   },

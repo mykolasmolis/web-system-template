@@ -1,1 +1,1 @@
-require('./services/currencyPairService');
+console.log(__dirname)
