@@ -24,6 +24,7 @@ const CurrencyPairList = (props) => {
     </div>
   );
 };
+
 CurrencyPairList.propTypes = {
   pairs: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.number,
